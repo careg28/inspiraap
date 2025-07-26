@@ -1,33 +1,54 @@
- import { StyleSheet } from 'react-native';
- export const styles = StyleSheet.create({
- container: 
-  { flex: 1, 
-    alignItems: 'center', 
-    padding: 20, 
-    paddingTop: 60 
-},
-  avatar: { 
-    backgroundColor: '#6200ee', 
-    marginBottom: 20 
-},
-  title: { 
-    fontSize: 20, 
-    marginBottom: 10, 
-    textAlign: 'center' 
-},
+// Estilos para el componente ProfileScreen.
+
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+    backgroundColor: '#f5f5f5', // Ejemplo de color de fondo.
+  },
+  avatar: {
+    marginBottom: 20,
+    backgroundColor: '#6200ee', // Ejemplo de color.
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 10,
+    fontWeight: 'bold',
+  },
+  lastEmotion: {
+    fontSize: 16,
+    color: '#555',
+    marginBottom: 20,
+  },
   subtitle: {
-     marginBottom: 20, 
-     textAlign: 'center'
-},
-  lastEmotion: { 
-    marginBottom: 20, 
-    textAlign: 'center', 
-    fontStyle: 'italic' 
-},
-  buttonGroup: { 
-    width: '100%', gap: 10 
-},
+    fontSize: 18,
+    marginTop: 10,
+    marginBottom: 10,
+    fontWeight: '600',
+  },
+  // Estilo para el TextInput del mensaje. Controla posición y tamaño.
+  messageInput: {
+    marginTop: 15,
+    marginBottom: 15,
+    width: '90%', 
+    alignSelf: 'center', 
+    minHeight:100,
+   
+  },
+  // Estilo para el contenedor de los botones de emoción.
+  buttonGroup: {
+    flexDirection: 'row', 
+    justifyContent: 'space-around', 
+    width: '100%', 
+    marginTop: 20,
+  },  
+
   emotionButton: {
-     marginVertical: 5 
-    },
+    flex: 1, 
+    marginHorizontal: 5, 
+  },
 });
